@@ -1,0 +1,28 @@
+{
+  "name": "FormToXMLConverter",
+  "version": "1.0.0",
+  "description": "Takes input from HTML form and creates XML",
+  "main": "index.js",
+  "scripts": {
+    "start": "node DialogCreator.js",
+    "start:dev": "nodemon DialogCreator.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "filesystem"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.5.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "js-crawler": "^0.3.21",
+    "mkdirp": "^0.5.1",
+    "nodemon": "^1.19.2",
+    "request": "^2.88.0",
+    "uglify-js": "^3.6.0",
+    "uuid": "^3.3.3"
+  }
+}

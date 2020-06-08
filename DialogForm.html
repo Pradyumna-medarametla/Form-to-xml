@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <style>
+    remainingQuestions{
+      display: none;
+    }
+    </style> -->
+  <script src="DialogCreator.js"></script>
+  <script>
+    function multifieldTypeOfFields(e) {
+      var i;
+      let parentDiv = e.target.parentElement;
+      var x = parentDiv.firstElementChild.value, htmlDoc = '';
+      if (x >= 1) {
+        for (i = 0; i < x; i++) {
+          htmlDoc += `<fieldset id="resourceType">
+            <label for="multifieldresourceType"> Type of the field ,like textfield etc.,</label>
+            <select name="multifieldresourceType">
+                <option value="textfield">textfield</option>
+                <option value="pathbrowser">pathbrowser</option>
+                <option value="textarea">textarea</option>
+                <option value="numberfield">numberfield</option>
+                <option value="hidden">hidden</option>
+                <option value="checkbox">checkbox</option>
+                <option value="autocomplete">autocomplete</option>
+                <option value="datepicker">datepicker</option> 
+            </select> <br>
+              <label for="multiFieldName"> Field Name</label> <input type="text" id="multiFieldName" name="multiFieldName" > <br>
+              <label for="multiFieldDescription"> Field Description</label> <input type="text" id="multiFieldDescription" name="multiFieldDescription" >
+            </fieldset>`;
+        };
+
+        var form = parentDiv.lastElementChild;
+        form.innerHTML = htmlDoc;
+
+      }
+    }
+
+    function multiFieldCheck(e) {
+      if(e.target.options[e.target.selectedIndex].value == 'multifield') {
+          e.target.nextElementSibling.nextElementSibling.style.display = "none";
+          let parentDiv = e.target.parentElement,
+        mfqDiv = e.target.nextElementSibling;
+
+      mfqDiv.insertAdjacentHTML('beforeend', `
+          How many fields your multifield has? <input type="number" class="multiNooffields" name="multiNooffields" />
+          <button type="button" id="nextButton" name="nextButton" value="yes" onclick=""> yes</button>
+          <div id="multifieldformDialog">
+            
+          </div>
+        `);
+      mfqDiv.firstElementChild.nextElementSibling.addEventListener('click', (e) => {
+        multifieldTypeOfFields(e);
+      })
+      } else {
+        e.target.nextElementSibling.nextElementSibling.style.display = "block";
+        e.target.nextElementSibling.innerHTML = '';
+      }
+    }
+
+
+    function typeOfFields(e) {
+      var i;
+      let parentDiv = e.target.parentElement;
+      var x = parentDiv.firstElementChild.value;
+      if (x >= 1) {
+        var htmlDoc = `<label for="tabname"> What is your tab name? </label> <input type="text" id="tabname" name="tabname"> <br>`;
+        for (i = 0; i < x; i++) {
+          htmlDoc += `<fieldset className="resourceType">
+            <label for="resourceType"> Type of the field ,like textfield etc.,</label>
+            <select name="resourceType">
+                <option value="textfield">textfield</option>
+                <option value="pathbrowser">pathbrowser</option>
+                <option value="textarea">textarea</option>
+                <option value="numberfield">numberfield</option>
+                <option value="hidden">hidden</option>
+                <option value="checkbox">checkbox</option>
+                <option value="autocomplete">autocomplete</option>
+                <option value="datepicker">datepicker</option>
+                <option value="multifield">multifield</option> 
+            </select>
+            <div id="multifieldQuestions">
+
+              </div>
+            <div id="remainingQuestions">
+      
+              <label for="FieldName"> Field Name</label> <input type="text" id="FieldName" name="FieldName" > <br>
+              <label for="FieldDescription"> Field Description</label> <input type="text" id="FieldDescription" name="FieldDescription" >
+            </fieldset>
+            </div>`;
+        };
+
+        var form = parentDiv.lastElementChild;
+        form.innerHTML = htmlDoc;
+        for(let fieldSet of form.children) {
+          if(fieldSet.tagName == "FIELDSET")
+          fieldSet.firstElementChild.nextElementSibling.addEventListener('change', (e) => {
+            multiFieldCheck(e);
+          })
+        }
+      }
+    }
+
+    function tabCreation() {
+      document.getElementById('createFinalXML').style.display = "block";
+      // let div = document.createElement('div');
+      // input = document.createElement('input');
+      // div.appendChild(input); - one way to convert text to a node
+      // div.innerHTML = 'HTMLsTRING'; - adding div every time , like adding div's in typeOfField()
+      // div.content.
+      document.getElementById('questions').insertAdjacentHTML('beforeend', `<div class="question">
+          How many fields your tab has? <input type="number" class="Nooffields" name="Nooffields" />
+          <button type="button" id="nextButton" name="nextButton" value="yes" onclick=""> yes</button>
+          <div id="formDialog">
+            
+          </div>  
+        </div>`);
+      document.getElementById(`questions`).lastElementChild.firstElementChild.nextElementSibling.addEventListener('click', (e) => {
+        typeOfFields(e);
+      })
+    }
+  </script>
+</head>
+
+<body>
+
+  <form method="POST" action="/createDialogXML">
+    <div id="question">
+      What is your component name? <input type="text" id="compname1" name="compname1">
+    </div>
+    <div id="questions">
+
+    </div>
+    <button type="button" id="anotherTab" name="anotherTab" onclick="tabCreation()"> Create tab</button>
+    <button type="submit" id="createFinalXML" name="createFinalXML" style="display: none"> submit</button>
+  </form>
+</body>
+
+</html>

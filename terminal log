@@ -1,0 +1,416 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+fs.js:154
+    throw new ERR_INVALID_CALLBACK(cb);
+    ^
+
+TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+?[90m    at makeCallback (fs.js:154:11)?[39m
+?[90m    at Object.mkdir (fs.js:805:14)?[39m
+    at Object.<anonymous> (C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:3:4)
+?[90m    at Module._compile (internal/modules/cjs/loader.js:936:30)?[39m
+?[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)?[39m
+?[90m    at Module.load (internal/modules/cjs/loader.js:790:32)?[39m
+?[90m    at Function.Module._load (internal/modules/cjs/loader.js:703:12)?[39m
+?[90m    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)?[39m
+?[90m    at internal/main/run_main_module.js:17:11?[39m
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+directory created
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+fs.js:130
+    throw err;
+    ^
+
+Error: EEXIST: file already exists, mkdir 'rough'
+?[90m    at Object.mkdirSync (fs.js:834:3)?[39m
+    at Object.<anonymous> (C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:3:4)
+?[90m    at Module._compile (internal/modules/cjs/loader.js:936:30)?[39m
+?[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)?[39m
+?[90m    at Module.load (internal/modules/cjs/loader.js:790:32)?[39m
+?[90m    at Function.Module._load (internal/modules/cjs/loader.js:703:12)?[39m
+?[90m    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)?[39m
+?[90m    at internal/main/run_main_module.js:17:11?[39m {
+  errno: ?[33m-4075?[39m,
+  syscall: ?[32m'mkdir'?[39m,
+  code: ?[32m'EEXIST'?[39m,
+  path: ?[32m'rough'?[39m
+}
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+fs.js:146
+  throw new ERR_INVALID_CALLBACK(cb);
+  ^
+
+TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+?[90m    at maybeCallback (fs.js:146:9)?[39m
+?[90m    at Object.exists (fs.js:210:3)?[39m
+    at Object.<anonymous> (C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:3:8)
+?[90m    at Module._compile (internal/modules/cjs/loader.js:936:30)?[39m
+?[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)?[39m
+?[90m    at Module.load (internal/modules/cjs/loader.js:790:32)?[39m
+?[90m    at Function.Module._load (internal/modules/cjs/loader.js:703:12)?[39m
+?[90m    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)?[39m
+?[90m    at internal/main/run_main_module.js:17:11?[39m
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+fs.js:146
+  throw new ERR_INVALID_CALLBACK(cb);
+  ^
+
+TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+?[90m    at maybeCallback (fs.js:146:9)?[39m
+?[90m    at Object.exists (fs.js:210:3)?[39m
+    at Object.<anonymous> (C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:3:8)
+?[90m    at Module._compile (internal/modules/cjs/loader.js:936:30)?[39m
+?[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)?[39m
+?[90m    at Module.load (internal/modules/cjs/loader.js:790:32)?[39m
+?[90m    at Function.Module._load (internal/modules/cjs/loader.js:703:12)?[39m
+?[90m    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)?[39m
+?[90m    at internal/main/run_main_module.js:17:11?[39m
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+opened the file
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+fs.js:130
+    throw err;
+    ^
+
+Error: ENOENT: no such file or directory, open './rough/rough.xml'
+?[90m    at Object.openSync (fs.js:451:3)?[39m
+    at Object.<anonymous> (C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:7:4)
+?[90m    at Module._compile (internal/modules/cjs/loader.js:936:30)?[39m
+?[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)?[39m
+?[90m    at Module.load (internal/modules/cjs/loader.js:790:32)?[39m
+?[90m    at Function.Module._load (internal/modules/cjs/loader.js:703:12)?[39m
+?[90m    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)?[39m
+?[90m    at internal/main/run_main_module.js:17:11?[39m {
+  errno: ?[33m-4058?[39m,
+  syscall: ?[32m'open'?[39m,
+  code: ?[32m'ENOENT'?[39m,
+  path: ?[32m'./rough/rough.xml'?[39m
+}
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+internal/validators.js:80
+        throw new ERR_INVALID_ARG_TYPE(name, 'number', value);
+        ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "fd" argument must be of type number. Received type string
+?[90m    at Object.write (fs.js:531:3)?[39m
+    at Object.<anonymous> (C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:7:4)
+?[90m    at Module._compile (internal/modules/cjs/loader.js:936:30)?[39m
+?[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)?[39m
+?[90m    at Module.load (internal/modules/cjs/loader.js:790:32)?[39m
+?[90m    at Function.Module._load (internal/modules/cjs/loader.js:703:12)?[39m
+?[90m    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)?[39m
+?[90m    at internal/main/run_main_module.js:17:11?[39m
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+internal/validators.js:80
+        throw new ERR_INVALID_ARG_TYPE(name, 'number', value);
+        ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "fd" argument must be of type number. Received type string
+?[90m    at Object.write (fs.js:531:3)?[39m
+    at Object.<anonymous> (C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:7:4)
+?[90m    at Module._compile (internal/modules/cjs/loader.js:936:30)?[39m
+?[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)?[39m
+?[90m    at Module.load (internal/modules/cjs/loader.js:790:32)?[39m
+?[90m    at Function.Module._load (internal/modules/cjs/loader.js:703:12)?[39m
+?[90m    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)?[39m
+?[90m    at internal/main/run_main_module.js:17:11?[39m
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm i uglify-js
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN FormToXMLConverter@1.0.0 No description
+npm WARN FormToXMLConverter@1.0.0 No repository field.
+
++ uglify-js@3.6.0
+added 3 packages from 38 contributors and audited 3 packages in 1.387s
+found 0 vulnerabilities
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> uglifyjs XMLCreator.js output.js
+uglifyjs : The term 'uglifyjs' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ uglifyjs XMLCreator.js output.js
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (uglifyjs:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm i uglify-js -g
+C:\Users\medprady\AppData\Roaming\npm\uglifyjs -> C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\bin\uglifyjs
++ uglify-js@3.6.0
+added 3 packages from 38 contributors in 0.868s
+PS C:\Users\medprady\Desktop\FormToXMLConverter> uglifyjs XMLCreator.js output.js
+ERROR: ENOENT: no such file or directory, open 'output.js'
+    at Object.openSync (fs.js:451:3)
+    at Object.readFileSync (fs.js:353:35)
+    at read_file (C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\bin\uglifyjs:339:19)
+    at C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\bin\uglifyjs:165:37
+    at Array.forEach (<anonymous>)
+    at Object.<anonymous> (C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\bin\uglifyjs:164:31)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+PS C:\Users\medprady\Desktop\FormToXMLConverter> uglifyjs XMLCreator.js
+Parse error at XMLCreator.js:18,23
+          var htmlDoc= `<fieldset id="dialogFields">
+                       ^
+ERROR: Unexpected character '`'
+    at JS_Parse_Error.get (eval at <anonymous> (C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\tools\node.js:20:1), <anonymous>:71:23)
+    at fatal (C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\bin\uglifyjs:298:27)
+    at run (C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\bin\uglifyjs:241:9)
+    at Object.<anonymous> (C:\Users\medprady\AppData\Roaming\npm\node_modules\uglify-js\bin\uglifyjs:167:5)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm uninstall uglify-js -g
+removed 3 packages in 0.23s
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm install browserify
+npm WARN FormToXMLConverter@1.0.0 No description
+npm WARN FormToXMLConverter@1.0.0 No repository field.
+
++ browserify@16.5.0
+added 138 packages from 109 contributors and audited 909 packages in 26.046s
+found 0 vulnerabilities
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+npm ERR! missing script: build
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\medprady\AppData\Roaming\npm-cache\_logs\2019-09-06T07_51_05_542Z-debug.log
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm i uuid
+npm WARN FormToXMLConverter@1.0.0 No description
+npm WARN FormToXMLConverter@1.0.0 No repository field.
+
++ uuid@3.3.3
+added 1 package from 5 contributors and audited 910 packages in 8.66s
+found 0 vulnerabilities
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm i uuid
+^CTerminate batch job (Y/N)?
+Terminate batch job (Y/N)? Y
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> node .\XMLCreator.js
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run build
+
+> FormToXMLConverter@1.0.0 build C:\Users\medprady\Desktop\FormToXMLConverter
+> browserify XMLCreator.js -o output.js
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm install express
+npm WARN FormToXMLConverter@1.0.0 No repository field.
+
++ express@4.17.1
+added 51 packages from 37 contributors and audited 1036 packages in 9.939s
+found 0 vulnerabilities
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm install nodemon
+
+> nodemon@1.19.2 postinstall C:\Users\medprady\Desktop\FormToXMLConverter\node_modules\nodemon
+> node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
+
+npm WARN FormToXMLConverter@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ nodemon@1.19.2
+added 202 packages from 126 contributors and audited 3305 packages in 48.443s
+found 0 vulnerabilities
+
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run start:dev
+
+> FormToXMLConverter@1.0.0 start:dev C:\Users\medprady\Desktop\FormToXMLConverter
+> nodemon index.js
+
+[nodemon] 1.19.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] starting `node index.js index.js`
+internal/modules/cjs/loader.js:775
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Users\medprady\Desktop\FormToXMLConverter\index.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:772:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:677:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js index.js`
+[nodemon] restarting due to changes...
+internal/modules/cjs/loader.js:775
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Users\medprady\Desktop\FormToXMLConverter\index.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:772:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:677:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+[nodemon] starting `node index.js index.js`
+internal/modules/cjs/loader.js:775
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Users\medprady\Desktop\FormToXMLConverter\index.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:772:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:677:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+[nodemon] app crashed - waiting for file changes before starting...
+Terminate batch job (Y/N)? Y
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run start:dev
+
+> FormToXMLConverter@1.0.0 start:dev C:\Users\medprady\Desktop\FormToXMLConverter
+> nodemon XMLCreator.js
+
+[nodemon] 1.19.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+Error: ENOENT: no such file or directory, stat 'C:\Users\medprady\Desktop\FormToXMLConverter\index.html'
+[nodemon] restarting due to changes...
+Error: ENOENT: no such file or directory, stat 'C:\Users\medprady\Desktop\FormToXMLConverter\index.html'
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node XMLCreator.js`
+C:\Users\medprady\Desktop\FormToXMLConverter\XMLCreator.js:18
+        'done' : 'success';
+                          ^
+
+SyntaxError: Unexpected token ;
+    at Module._compile (internal/modules/cjs/loader.js:872:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node XMLCreator.js`
+[nodemon] restarting due to changes...
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+Terminate batch job (Y/N)? Y
+PS C:\Users\medprady\Desktop\FormToXMLConverter> npm run start:dev
+
+> FormToXMLConverter@1.0.0 start:dev C:\Users\medprady\Desktop\FormToXMLConverter
+> nodemon XMLCreator.js
+
+[nodemon] 1.19.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node XMLCreator.js`
+body-parser deprecated undefined extended: provide extended option XMLCreator.js:7:21
+listening to 3000
